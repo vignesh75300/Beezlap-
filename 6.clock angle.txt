@@ -1,0 +1,18 @@
+import java .util.*;
+public class BeezLab
+{
+ public static void main(String args[])
+{
+ Scanner sc= new Scanner(System.in);
+ String time=sc=nextLine();
+ String []arr=time.split(":");
+ int hour=Integer.parseInt(arr[0]);
+ int minute=Integer.parseInt(arr[1]);
+ int hrs =(hour*360)/12+(minute*360)/(12*60);
+ int min=(int)(minute*360)/(60);
+ int degree=Math.abs(hrs-min);
+ if(degree>180){
+ degree=360-degree;
+} 
+System.out.println(degree+" degree");
+}

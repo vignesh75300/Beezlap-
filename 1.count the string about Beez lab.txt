@@ -1,0 +1,1 @@
+print(len("Beez lab role would be that of RPA"))

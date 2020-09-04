@@ -1,0 +1,28 @@
+import java .util.*
+public class Beez lab
+ {
+  
+ public static void main(String args[])
+{ 
+ Scanner sc= new Scanner(System.in);
+ int num=sc.nextInt();
+ int temp=num,flag=0,sum=0;
+ while(flag==0)
+{
+ while(temp!=0){
+  sum+=temp%10;
+  temp/=`10;
+}
+int len=(sum+"").length();
+if(len==1)
+{
+ System.out.print("sum");
+ return;
+ }
+ temp=sum;
+ sum=0;
+}
+system.out.print(sum);
+}
+}
+
